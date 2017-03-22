@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            overflow: hidden;
+        }
+        canvas{
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="mycanvas"></canvas>
+    <script src="js/AudioAPI.js"></script>
+    <script src="js/underscore.min.js"></script>
+    <script src="js/Role.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/Map.js"></script>
+    <script type="text/javascript">
+        var game = new Game({
+            "canvasid" : "#mycanvas",
+            "Rjsonurl" : "R.json"
+        });
+    </script>
+</body>
+</html>
